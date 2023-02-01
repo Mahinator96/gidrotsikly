@@ -1,0 +1,54 @@
+// Цвет
+$main_text-color: #2F3035;
+$color-decor: #1C62CD;
+$bg-gray: #F0F0F4;
+
+/* font-weight */
+  $bold: 700;
+  $semibold: 600;
+  $medium: 500;
+  $regular: 400;
+  $light: 300;
+
+// Шрифты
+
+  /* Barlow */
+  %ff_Barlow-Bold {
+    font-family: 'Barlow-Bold', sans-serif;
+    font-weight: 700;
+  }
+  %ff_Barlow-SemiBold {
+    font-family: 'Barlow-SemiBold', sans-serif;
+    font-weight: 600;
+  }
+  %ff_Barlow-Regular {
+    font-family: 'Barlow-Regular', sans-serif;
+    font-weight: 400;
+  }
+  %ff_Barlow-Light {
+    font-family: 'Barlow-Light', sans-serif;
+    font-weight: 300;
+  }
+  /* SFProDisplay */
+  %ff_SFProDisplay-Bold{
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    font-weight: 700;
+  }
+  %ff_SFProDisplay-Semibold{
+    font-family: 'SFProDisplay-Semibold', sans-serif;
+    font-weight: 600;
+  }
+  %ff_SFProDisplay-Medium{
+    font-family: 'SFProDisplay-Medium', sans-serif;
+    font-weight: 500;
+  }
+  %ff_SFProDisplay-Regular{
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    font-weight: 400;
+  }
+  /* Proximanova */
+  %ff_Proximanova-Bold {
+    font-family: 'Proximanova-Bold', sans-serif;
+    font-weight: 600;
+  }
+

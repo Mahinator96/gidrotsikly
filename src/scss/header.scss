@@ -1,0 +1,141 @@
+.header {
+  margin-bottom: 78px;
+  // .header__top
+  &__top {
+    // .header__top-inner
+    &-inner {
+      @extend %ff_SFProDisplay-Bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 122px;     
+    }
+  }
+  // .header__box
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+  // .header__adress
+  &__adress {
+    position: relative;
+    margin-right: 60px;
+    max-width: 265px;
+    padding-left: 30px;
+    // .header__adress::before
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('@img/adress-icon.svg');
+      width: 30px;
+      height: 30px;
+      left: 0;
+      top: -11px;
+    }
+  }
+  // .header__bottom
+  &__bottom {
+    // .header__bottom-inner
+    &-inner {
+      background: $bg-gray;
+    }
+  }
+}
+.menu {
+  &-nav {
+    // .menu__list
+    &__list {
+    }
+    // .menu__item
+    &__item {
+      display: inline-block;
+      // .menu__item + .menu__item
+      & + .menu-nav__item {
+        padding-left: 50px;
+      }
+    }
+    // .menu__link
+    &__link {
+      
+    }
+  }
+  // .menu-categories
+  &-categories {
+    display: flex;
+    justify-content: space-around;
+    // .menu-categories__item
+    &__item {
+      position: relative;
+    }
+    // .menu-categories__link
+    &__link {
+      transition: all 0.3s;
+      padding: 15px 0 14px;
+      // .menu-categories__link:before
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        right: 0;
+        bottom: -3px;
+        background-color:  $color-decor;
+        transition: all 0.5s;
+      }
+      // .menu-categories__link:hover
+      &:hover {
+        // color: #000;
+        transform: scale(1.1);
+        // .menu-categories__link:hover::before
+        &::before {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+.logo {
+  // .logo__img
+  &__img {
+  }
+}
+.user {
+  // .user-list
+  &-list {
+  }
+}
+.user-list {
+  margin-right: 12px;
+  display: flex;
+  text-align: center; 
+  // .user-list__item
+  &__item {
+    padding-right: 10px;
+  }
+  // .user-list__link
+  &__link {
+  }
+}
+// .basket
+.basket {
+  position: relative;
+  // .basket__num
+  &__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %ff_SFProDisplay-Medium;
+    position: absolute;
+    font-size: 10px;
+    line-height: 12px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background-color: $color-decor; 
+    border-radius: 50%;
+    text-align: center;
+    top: 9px;
+    right: -14px;
+  }
+}

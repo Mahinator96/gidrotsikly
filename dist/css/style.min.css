@@ -3,11 +3,6 @@ html {
 }
 
 body {
-  padding-top: 70px;
-  font-size: calc(12px + 12 * ((100vw - 320px) / 1600));
-  font-weight: 400;
-  line-height: 1.208;
-  font-family: Montserrat;
   min-width: 320px;
   overflow-x: hidden;
   margin: 0;
@@ -57,6 +52,100 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* font-weight */
+/* Barlow */
+/* SFProDisplay */
+.header__top-inner {
+  font-family: "SFProDisplay-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.basket__num {
+  font-family: "SFProDisplay-Medium", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-weight: 400;
+}
+
+/* Proximanova */
+@font-face {
+  font-family: "Barlow-Bold", sans-serif;
+  font-display: swap;
+  src: url("../fonts/Barlow-Bold.woff2") format("woff2"), url("../fonts/Barlow-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow-Light", sans-serif;
+  font-display: swap;
+  src: url("../fonts/Barlow-Light.woff2") format("woff2"), url("../fonts/Barlow-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow-SemiBold", sans-serif;
+  font-display: swap;
+  src: url("../fonts/Barlow-SemiBold.woff2") format("woff2"), url("../fonts/Barlow-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow-Regular", sans-serif;
+  font-display: swap;
+  src: url("../fonts/Barlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proximanova-Bold", sans-serif;
+  font-display: swap;
+  src: url("../fonts/proximanova_bold.woff2") format("woff2"), url("../fonts/proximanova_bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay-Medium", sans-serif;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay-Bold", sans-serif;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay-Semibold", sans-serif;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2F3035;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* Slider */
@@ -163,4 +252,99 @@ img {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.header {
+  margin-bottom: 78px;
+}
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 122px;
+}
+.header__box {
+  display: flex;
+  align-items: center;
+}
+.header__adress {
+  position: relative;
+  margin-right: 60px;
+  max-width: 265px;
+  padding-left: 30px;
+}
+.header__adress::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/adress-icon.svg");
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: -11px;
+}
+.header__bottom-inner {
+  background: #F0F0F4;
+}
+
+.menu-nav__item {
+  display: inline-block;
+}
+.menu-nav__item + .menu-nav__item {
+  padding-left: 50px;
+}
+.menu-categories {
+  display: flex;
+  justify-content: space-around;
+}
+.menu-categories__item {
+  position: relative;
+}
+.menu-categories__link {
+  transition: all 0.3s;
+  padding: 15px 0 14px;
+}
+.menu-categories__link:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  right: 0;
+  bottom: -3px;
+  background-color: #1C62CD;
+  transition: all 0.5s;
+}
+.menu-categories__link:hover {
+  transform: scale(1.1);
+}
+.menu-categories__link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.user-list {
+  margin-right: 12px;
+  display: flex;
+  text-align: center;
+}
+.user-list__item {
+  padding-right: 10px;
+}
+.basket {
+  position: relative;
+}
+.basket__num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 10px;
+  line-height: 12px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  background-color: #1C62CD;
+  border-radius: 50%;
+  text-align: center;
+  top: 9px;
+  right: -14px;
 }
