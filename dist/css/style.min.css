@@ -1,3 +1,66 @@
+@font-face {
+  font-family: Barlow;
+  font-display: swap;
+  src: url("../fonts/Barlow-Bold.woff2") format("woff2"), url("../fonts/Barlow-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Barlow;
+  font-display: swap;
+  src: url("../fonts/Barlow-Light.woff2") format("woff2"), url("../fonts/Barlow-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Barlow;
+  font-display: swap;
+  src: url("../fonts/Barlow-SemiBold.woff2") format("woff2"), url("../fonts/Barlow-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Barlow;
+  font-display: swap;
+  src: url("../fonts/Barlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: proximanova_bold;
+  font-display: swap;
+  src: url("../fonts/proximanova_bold.woff2") format("woff2"), url("../fonts/proximanova_bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFProDisplay;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFProDisplay;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFProDisplay;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFProDisplay;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
 html {
   box-sizing: border-box;
 }
@@ -56,86 +119,38 @@ img {
 
 /* font-weight */
 /* Barlow */
+.sale-item__footer span, .sale-item__price-new {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+}
+
+.sale-item__price-old {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
 /* SFProDisplay */
-.header__top-inner {
-  font-family: "SFProDisplay-Bold", sans-serif;
+.sale-item__title, .header__top-inner {
+  font-family: "SFProDisplay", sans-serif;
   font-weight: 700;
 }
 
 .basket__num {
-  font-family: "SFProDisplay-Medium", sans-serif;
+  font-family: "SFProDisplay", sans-serif;
   font-weight: 500;
 }
 
 body {
-  font-family: "SFProDisplay-Regular", sans-serif;
+  font-family: "SFProDisplay", sans-serif;
   font-weight: 400;
 }
 
 /* Proximanova */
-@font-face {
-  font-family: "Barlow-Bold", sans-serif;
-  font-display: swap;
-  src: url("../fonts/Barlow-Bold.woff2") format("woff2"), url("../fonts/Barlow-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Barlow-Light", sans-serif;
-  font-display: swap;
-  src: url("../fonts/Barlow-Light.woff2") format("woff2"), url("../fonts/Barlow-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Barlow-SemiBold", sans-serif;
-  font-display: swap;
-  src: url("../fonts/Barlow-SemiBold.woff2") format("woff2"), url("../fonts/Barlow-SemiBold.woff") format("woff");
+.sale-item__info {
+  font-family: "proximanova_bold", sans-serif;
   font-weight: 600;
-  font-style: normal;
 }
-@font-face {
-  font-family: "Barlow-Regular", sans-serif;
-  font-display: swap;
-  src: url("../fonts/Barlow-Regular.woff2") format("woff2"), url("../fonts/Barlow-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Proximanova-Bold", sans-serif;
-  font-display: swap;
-  src: url("../fonts/proximanova_bold.woff2") format("woff2"), url("../fonts/proximanova_bold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SFProDisplay-Medium", sans-serif;
-  font-display: swap;
-  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SFProDisplay-Bold", sans-serif;
-  font-display: swap;
-  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SFProDisplay-Semibold", sans-serif;
-  font-display: swap;
-  src: url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SFProDisplay-Regular", sans-serif;
-  font-display: swap;
-  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+
 body {
   font-size: 20px;
   line-height: 1.2;
@@ -146,6 +161,240 @@ body {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 78px;
+}
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 122px;
+}
+.header__box {
+  display: flex;
+  align-items: center;
+}
+.header__adress {
+  position: relative;
+  margin-right: 60px;
+  max-width: 265px;
+  padding-left: 30px;
+}
+.header__adress::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/adress-icon.svg");
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: -11px;
+}
+.header__bottom-inner {
+  background: #F0F0F4;
+}
+
+.menu-nav__item {
+  display: inline-block;
+}
+.menu-nav__item + .menu-nav__item {
+  padding-left: 50px;
+}
+.menu-categories {
+  display: flex;
+  justify-content: space-around;
+}
+.menu-categories__item {
+  position: relative;
+}
+.menu-categories__link {
+  transition: all 0.3s;
+  padding: 15px 0 14px;
+}
+.menu-categories__link:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  right: 0;
+  bottom: -3px;
+  background-color: #1C62CD;
+  transition: all 0.5s;
+}
+.menu-categories__link:hover {
+  transform: scale(1.1);
+}
+.menu-categories__link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.user-list {
+  margin-right: 12px;
+  display: flex;
+  text-align: center;
+}
+.user-list__item {
+  padding-right: 10px;
+}
+.basket {
+  position: relative;
+}
+.basket__num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 10px;
+  line-height: 12px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  background-color: #1C62CD;
+  border-radius: 50%;
+  text-align: center;
+  top: 9px;
+  right: -14px;
+}
+
+.banner-section__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-section__slider {
+  max-width: 870px;
+}
+.banner-section__slider-item {
+  position: relative;
+}
+.banner-section__slider-img {
+  min-height: 400px;
+}
+.banner-section__slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+  cursor: pointer;
+  outline: none;
+}
+.banner-section__slider-btnprev {
+  left: 20px;
+}
+.banner-section__slider-btnnext {
+  right: 20px;
+}
+.sale-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 265px;
+  text-align: center;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+}
+.sale-item__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.sale-item__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.sale-item__info {
+  font-size: 12px;
+  line-height: 1.218;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #1C62CD;
+  padding: 8px 12px;
+  width: fit-content;
+}
+.sale-item__price {
+  text-align: right;
+  width: fit-content;
+}
+.sale-item__price-new {
+  font-size: 27px;
+  line-height: 1.185;
+  color: #1C62CD;
+  margin-right: 6px;
+  margin-top: 2px;
+  margin-bottom: 7px;
+}
+.sale-item__price-old {
+  font-size: 14px;
+  line-height: 1.214;
+  color: #CDCDCD;
+  margin-right: 3px;
+  margin-left: auto;
+  width: fit-content;
+  background-image: url("../img/old-line.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: -2px 2px;
+}
+.sale-item__price-old span {
+  margin-left: 3px;
+}
+.sale-item__img {
+  max-width: 125px;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.sale-item__title {
+  font-size: 18px;
+  line-height: 1.16;
+  margin-bottom: 7px;
+  padding: 0 10px;
+}
+.sale-item__footer {
+  font-size: 18px;
+  line-height: 1.16;
+  padding: 25px 12px 25px 20px;
+  background-color: #F0F0F4;
+}
+.sale-item__footer span {
+  display: inline-block;
+  line-height: 22px;
+  color: #1C62CD;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.slick-dots li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.slick-dots li.slick-active button {
+  background-color: #fff;
+}
+.slick-dots li button {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
 }
 
 /* Slider */
@@ -252,99 +501,4 @@ body {
 
 .slick-arrow.slick-hidden {
   display: none;
-}
-
-.header {
-  margin-bottom: 78px;
-}
-.header__top-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 122px;
-}
-.header__box {
-  display: flex;
-  align-items: center;
-}
-.header__adress {
-  position: relative;
-  margin-right: 60px;
-  max-width: 265px;
-  padding-left: 30px;
-}
-.header__adress::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/adress-icon.svg");
-  width: 30px;
-  height: 30px;
-  left: 0;
-  top: -11px;
-}
-.header__bottom-inner {
-  background: #F0F0F4;
-}
-
-.menu-nav__item {
-  display: inline-block;
-}
-.menu-nav__item + .menu-nav__item {
-  padding-left: 50px;
-}
-.menu-categories {
-  display: flex;
-  justify-content: space-around;
-}
-.menu-categories__item {
-  position: relative;
-}
-.menu-categories__link {
-  transition: all 0.3s;
-  padding: 15px 0 14px;
-}
-.menu-categories__link:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 3px;
-  right: 0;
-  bottom: -3px;
-  background-color: #1C62CD;
-  transition: all 0.5s;
-}
-.menu-categories__link:hover {
-  transform: scale(1.1);
-}
-.menu-categories__link:hover::before {
-  width: 100%;
-  left: 0;
-}
-
-.user-list {
-  margin-right: 12px;
-  display: flex;
-  text-align: center;
-}
-.user-list__item {
-  padding-right: 10px;
-}
-.basket {
-  position: relative;
-}
-.basket__num {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  font-size: 10px;
-  line-height: 12px;
-  width: 20px;
-  height: 20px;
-  color: #fff;
-  background-color: #1C62CD;
-  border-radius: 50%;
-  text-align: center;
-  top: 9px;
-  right: -14px;
 }
