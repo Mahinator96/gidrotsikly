@@ -115,6 +115,7 @@
   </header>
   <!-- Начало .banner-section -->
   <section class="banner-section">
+    <h2 class="visually-hidden">Баннер с рекламой</h2>
     <div class="container">
       <div class="banner-section__inner">
         <!-- Начало .banner-section__slider -->
@@ -171,33 +172,34 @@
   </section>
   <!-- Конец .banner-section -->
     <section class="search">
+    <h2 class="visually-hidden">Поиск на странице</h2>
     <div class="container">
       <div class="search__inner">
         <!-- Начало .search__tabs-->
         <div class="search__tabs">
-          <a class="search__tabs-item" href="#tab-1"  aria-label="Поиск по  номеру"></a>
-          <a class="search__tabs-item search__tabs-item--active" href="#tab-2" aria-label="Поиск по марке"></a>
-          <a class="search__tabs-item" href="#tab-3" aria-label="Поиск по названию товара"></a>
+          <a class="search__tabs-item tab " href="#tab-1"  aria-label="Поиск по  номеру"></a>
+          <a class="search__tabs-item tab  tab--active" href="#tab-2" aria-label="Поиск по марке"></a>
+          <a class="search__tabs-item tab " href="#tab-3" aria-label="Поиск по названию товара"></a>
         </div>
         <!-- Конец .search__tabs-->
 
         <!-- Начало .search__content-->
         <div class="search__content">
-          <div class="search__content-item" id="tab-1">
+          <div class="search__content-item tabs-content " id="tab-1">
             <form class="search__content-form" action="#">
               <input class="search__content-input" type="text" placeholder="Введите номер">
               <button class="search__content-btn" type="submit">искать</button>
             </form>
           </div>
 
-          <div class="search__content-item search__content-item--active" id="tab-2">
+          <div class="search__content-item tabs-content tabs-content--active" id="tab-2">
             <form class="search__content-form" action="#">
               <input class="search__content-input" type="text" placeholder="Введите марку">
               <button class="search__content-btn" type="submit">искать</button>
             </form>
           </div>
 
-          <div class="search__content-item" id="tab-3">
+          <div class="search__content-item tabs-content " id="tab-3">
             <form class="search__content-form" action="#">
               <input class="search__content-input" type="text" placeholder="Введите название товара">
               <button class="search__content-btn" type="submit">искать</button>
@@ -208,6 +210,101 @@
       </div>
     </div>
   </section>
+    <section class="categories">
+    <h2 class="visually-hidden">Категории товаров</h2>
+    <div class="container">
+      <!-- Начало .categories__inner-->
+      <div class="categories__inner">
+        <a class="categories__item" href="#">
+          <div class="categories__item-info">
+            <h4 class="categories__item-title">Квадроциклы</h4>
+            <p class="categories__item-text">Подробнее</p>
+          </div>
+          
+          <img class="categories__item-img" src="img/categories-1.png" alt="">
+        </a>
+
+        <a class="categories__item" href="#">
+          <div class="categories__item-info">
+            <h4 class="categories__item-title">Гидроциклы</h4>
+            <p class="categories__item-text">Подробнее</p>
+          </div>
+          
+          <img class="categories__item-img" src="img/categories-2.png" alt="">
+        </a>
+
+        <a class="categories__item" href="#">
+          <div class="categories__item-info">
+            <h4 class="categories__item-title">Катера</h4>
+            <p class="categories__item-text">Подробнее</p>
+          </div>
+          
+          <img class="categories__item-img" src="img/categories-3.png" alt="">
+        </a>
+
+        <a class="categories__item" href="#">
+          <div class="categories__item-info">
+            <h4 class="categories__item-title">Снегоходы</h4>
+            <p class="categories__item-text">Подробнее</p>
+          </div>
+          
+          <img class="categories__item-img" src="img/categories-4.png" alt="">
+        </a>
+
+        <a class="categories__item" href="#">
+          <div class="categories__item-info">
+            <h4 class="categories__item-title">Вездеходы</h4>
+            <p class="categories__item-text">Подробнее</p>
+          </div>
+          
+          <img class="categories__item-img" src="img/categories-5.png" alt="">
+        </a>
+
+        <a class="categories__item" href="#">
+          <div class="categories__item-info">
+            <h4 class="categories__item-title">Двигатели</h4>
+            <p class="categories__item-text">Подробнее</p>
+          </div>
+          
+          <img class="categories__item-img" src="img/categories-6.png" alt="">
+        </a>
+      </div>
+      <!-- Конец .categories__inner-->
+
+    </div>
+  </section>
+  <section class="products">
+  <div class="container">
+    <div class="products__inner">
+      <!-- Начало tabs-wrapper -->
+      <div class="tabs-wrapper">
+        <div class="tabs products__tabs">
+          <a class="products__tab tab  tab--active" href="#"></a>
+        </div>
+
+        <div class="product__container tabs-container ">
+          <div class="products-content tabs-content tabs-content--active ">
+
+          </div>
+        </div>
+      </div>
+      <!-- Конец tabs-wrapper -->
+
+    </div>
+  </div>
+</section>
+
+<!-- <div class="tabs-wrapper">
+  <div class="tabs">
+    <a class="tab tab--active" href="#"></a>
+  </div>
+
+  <div class="tabs-container">
+    <div class="tabs-content">
+
+    </div>
+  </div>
+</div> -->
 
 
   <script src="js/app.min.js"></script>

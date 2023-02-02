@@ -123,7 +123,7 @@ img {
 
 /* font-weight */
 /* Barlow */
-.sale-item__footer span, .sale-item__price-new {
+.categories__item-title, .sale-item__footer span, .sale-item__price-new {
   font-family: "Barlow", sans-serif;
   font-weight: 700;
 }
@@ -559,15 +559,8 @@ section {
 .search__tabs-item:focus-visible::after {
   display: none;
 }
-.search__tabs-item--active {
-  background-color: #F0F0F4;
-  font-weight: 700;
-}
 .search__content-item {
   display: none;
-}
-.search__content-item--active {
-  display: block;
 }
 .search__content-form {
   display: flex;
@@ -603,4 +596,70 @@ section {
   top: 0;
   right: 0;
   cursor: pointer;
+}
+
+.search__tabs-item.tab--active {
+  background-color: #F0F0F4;
+  font-weight: 700;
+}
+
+.search__content-item.tabs-content--active {
+  display: block;
+}
+
+.categories__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.categories__item {
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  width: 370px;
+  height: 130px;
+  display: flex;
+  padding: 20px;
+  padding-bottom: 15px;
+  transition: box-shadow 0.5s;
+}
+.categories__item:hover {
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  border: 1px solid transparent;
+}
+.categories__item:hover .categories__item-title {
+  color: #1C62CD;
+}
+.categories__item-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.categories__item-title {
+  font-size: 23px;
+  line-height: 28px;
+  transition: 0.5s;
+}
+.categories__item-text {
+  font-size: 14px;
+  line-height: 0.642;
+  color: #C4C4C4;
+  position: relative;
+  padding-right: 10px;
+  width: fit-content;
+}
+.categories__item-text::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 6px;
+  height: 9px;
+  background-image: url("../img/link-arrow.svg");
+  background-repeat: no-repeat;
+}
+.categories__item-img {
+  margin: 0 auto;
+  max-width: 100%;
 }
