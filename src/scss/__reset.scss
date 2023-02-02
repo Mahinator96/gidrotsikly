@@ -24,6 +24,9 @@ html {
   h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
   }
+  button, input, select, textarea{
+    border: none;
+  }
   ul {
     list-style: none;
     padding: 0;
@@ -46,4 +49,5 @@ html {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
   

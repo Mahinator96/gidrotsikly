@@ -1,0 +1,100 @@
+.search {
+  // .search__inner
+  &__inner {
+  }
+  // .search__tabs
+  &__tabs {
+    margin-bottom: 25px;
+    // .search__tabs-item
+    &-item {
+      padding: 11px 26px 12px;
+      border-radius: 5px;
+      position: relative;
+      text-align: center;
+
+      &::before, &::after {
+        content: attr(aria-label);
+        text-decoration: inherit;
+      }
+      
+      &::before {
+        font-weight: 700;
+        visibility: hidden;
+      }
+      
+      &::after {
+        position: absolute;
+        left: 0;
+        top: 11px;
+        right: 0;
+        bottom: 0;
+      }
+      
+      &:focus-visible::before {
+        visibility: visible;
+      }
+      
+      &:focus-visible::after {
+        display: none;
+      }
+
+      &--active {
+        background-color: $bg-gray;
+        font-weight: 700;
+      }
+    }
+  }
+  // .search__content
+  &__content {
+    // .search__content-item
+    &-item {
+      display: none;
+      // .search__content-item--active
+      &--active {
+        display: block;
+      }
+    }
+    // .search__content-form
+    &-form {
+      display: flex;
+      position: relative;
+    }
+    // .search__content-input
+    &-input {
+      font-size: 16px;
+      line-height: 1.187;
+      background-color: $bg-gray;
+      padding: 15px 20px;
+      border: 3px;
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      // .search__content-input::placeholder
+      &::placeholder {
+        color: $bg-input;
+      }
+      // .search__content-input:focus-visible
+      &:focus-visible {
+        outline: #000 solid 1px;
+      }
+    }
+    // .search__content-btn
+    &-btn {
+      padding: 17px 40px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.214;      
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: $color-decor;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+}
+.container {
+}

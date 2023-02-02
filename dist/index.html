@@ -76,35 +76,35 @@
           <!-- Начало .menu-categories -->
           <ul class="menu-categories">
             <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Квадроциклы</a>
+              <a class="menu-categories__link" href="#" aria-label="Квадроциклы"></a>
             </li>
 
             <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Катера</a>
+              <a class="menu-categories__link" href="#" aria-label="Катера"></a>
             </li>
 
             <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Гидроциклы</a>
+              <a class="menu-categories__link" href="#" aria-label="Гидроциклы"></a>
             </li>
 
             <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Лодки</a>
+              <a class="menu-categories__link" href="#" aria-label="Лодки"></a>
             </li>
 
             <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Вездеходы</a>
+              <a class="menu-categories__link" href="#" aria-label="Вездеходы"></a>
             </li>
 
             <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Снегоходы</a>
+              <a class="menu-categories__link" href="#" aria-label="Снегоходы"></a>
             </li>
 
             <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Двигатели</a>
+              <a class="menu-categories__link" href="#" aria-label="Двигатели"></a>
             </li>
 
             <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Запчасти</a>
+              <a class="menu-categories__link" href="#" aria-label="Запчасти"></a>
             </li>
           </ul>
           <!-- Начало .menu-categories -->
@@ -170,6 +170,44 @@
     </div>
   </section>
   <!-- Конец .banner-section -->
+    <section class="search">
+    <div class="container">
+      <div class="search__inner">
+        <!-- Начало .search__tabs-->
+        <div class="search__tabs">
+          <a class="search__tabs-item" href="#tab-1"  aria-label="Поиск по  номеру"></a>
+          <a class="search__tabs-item search__tabs-item--active" href="#tab-2" aria-label="Поиск по марке"></a>
+          <a class="search__tabs-item" href="#tab-3" aria-label="Поиск по названию товара"></a>
+        </div>
+        <!-- Конец .search__tabs-->
+
+        <!-- Начало .search__content-->
+        <div class="search__content">
+          <div class="search__content-item" id="tab-1">
+            <form class="search__content-form" action="#">
+              <input class="search__content-input" type="text" placeholder="Введите номер">
+              <button class="search__content-btn" type="submit">искать</button>
+            </form>
+          </div>
+
+          <div class="search__content-item search__content-item--active" id="tab-2">
+            <form class="search__content-form" action="#">
+              <input class="search__content-input" type="text" placeholder="Введите марку">
+              <button class="search__content-btn" type="submit">искать</button>
+            </form>
+          </div>
+
+          <div class="search__content-item" id="tab-3">
+            <form class="search__content-form" action="#">
+              <input class="search__content-input" type="text" placeholder="Введите название товара">
+              <button class="search__content-btn" type="submit">искать</button>
+            </form>
+          </div>
+        </div>
+        <!-- Конец .search__content-->
+      </div>
+    </div>
+  </section>
 
 
   <script src="js/app.min.js"></script>
