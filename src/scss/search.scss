@@ -42,10 +42,7 @@
   }
   // .search__content
   &__content {
-    // .search__content-item
-    &-item {
-      display: none;
-    }
+    
     // .search__content-form
     &-form {
       display: flex;
@@ -91,7 +88,4 @@
 .search__tabs-item.tab--active {
   background-color: $bg-gray;
   font-weight: 700;
-}
-.search__content-item.tabs-content--active {
-  display: block;
 }

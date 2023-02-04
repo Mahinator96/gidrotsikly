@@ -15,14 +15,18 @@
     display: flex;
     padding: 20px;
     padding-bottom: 15px;
-    transition: box-shadow 0.5s;
+    transition: all 0.3s;
     // .categories__item:hover
     &:hover {
       box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
       border: 1px solid transparent;
+      // scale: 1.01;
+      // .categories__item-img {
+      //   scale: 1.05;
+      // }
     }
     // .categories__item:hover .categories__item-title
-    &:hover .categories__item-title{
+    & .categories__item-title{
       color: $color-decor;
     }
     // .categories__item-info
@@ -65,6 +69,7 @@
     &-img {
       margin: 0 auto;
       max-width: 100%;
+      transition: 0.5s;
     }
   }
 }

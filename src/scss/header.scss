@@ -66,6 +66,7 @@
     // .menu-categories__item
     &__item {
       position: relative;
+      padding: 15px 0 14px;
       // .menu-categories__link:before
       &:before {
         content: '';
@@ -85,35 +86,11 @@
         }
       }
     }
-    // .menu-categories__link
+    // .menu-categories__link::after
     &__link {
-      transition: all 0.3s;
-      padding: 15px 0 14px;
 
-      &::before, &::after {
-        content: attr(aria-label);
-        text-decoration: inherit;
-      }
-      
-      &::before {
-        font-weight: 600;
-        visibility: hidden;
-
-      }
       &::after {
-        position: absolute;
-        left: 0;
         top: 15px;
-        right: 0;
-        bottom: 0;
-      }
-      
-      &:hover::before {
-        visibility: visible;
-      }
-      
-      &:hover::after {
-        display: none;
       }
     }
   }
