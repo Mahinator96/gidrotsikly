@@ -1,0 +1,121 @@
+.footer {
+  background-color: $bg-gray;
+  padding-top: 43px;
+  // .footer-form
+  &-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  // .footer-input
+  &-input {
+    font-size: 14px;
+    line-height: 1.21;
+    padding-left: 12px;
+
+    &::placeholder {
+      color: $color-link;
+    }
+  }
+  // .footer-btn
+  &-btn {
+    text-transform: uppercase;
+    padding: 10px 16px;
+    background-color: $color-decor;
+    color: #fff;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.2;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+  }
+  // .footer__top
+  &__top {
+    margin-bottom: 46px;
+    font-size: 14px;
+    line-height: 1.21;
+    font-weight: 500;
+
+    // .footer__top-inner
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    // .footer__top-item
+    &-item {
+    // .footer__top-newsletter
+      &--newsletter {
+        width: 295px;
+        // .footer__top-newsletter .footer__top-title
+        & .footer__top-title {
+          margin-bottom: 35px;
+        }
+      }
+      // .footer__top-item--social
+      &--social {
+        display: flex;
+        width: 210px;
+      }
+      // .footer__top-item--info
+      &--info {
+        max-width: 110px;
+      }
+      // .footer__top-item--shop
+      &--shop {
+        max-width: 200px;
+      }
+      & + .footer__top-item {
+        padding-left: 10px;
+      }
+    }
+    // .footer__top-title
+    &-title {
+      font-weight: 700;
+    }
+  }
+  // .footer__list
+  &__list {
+    // display: flex;
+    // flex-direction: column;
+    // gap: 10px;
+
+    // .footer__list-item
+    &-item {
+      padding-top: 5px;
+
+    }
+  }
+  // .footer__bottom
+  &__bottom {
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    column-gap: 80px;
+    // .footer__bottom-link
+    &-link {
+      font-size: 10px;
+      line-height: 1.2;
+      color: $color-footer-link;
+    }
+  }
+}
+.container {
+}
+.visually {
+  // .visually-hidden
+  &-hidden {
+  }
+}
+.social {
+  // .social-list
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.social-list {
+  width: 100%;
+  // .social-list__item
+  &__item {
+  }
+}

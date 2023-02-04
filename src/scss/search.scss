@@ -62,10 +62,6 @@
       &::placeholder {
         color: $bg-input;
       }
-      // .search__content-input:focus-visible
-      &:focus-visible {
-        outline: #000 solid 1px;
-      }
     }
     // .search__content-btn
     &-btn {

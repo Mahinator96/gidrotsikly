@@ -60,7 +60,7 @@ section {
   }
 }
 .product__tabs {
-  margin-bottom: 35px;
+  // margin-bottom: 35px;
   display: flex;
   column-gap: 50px;
 }
@@ -102,6 +102,12 @@ section {
     &::after {
       font-weight: 500;
     }
+  }
+}
+input {
+  
+  &:focus-visible {
+    outline: #000 solid 1px;
   }
 }
 
