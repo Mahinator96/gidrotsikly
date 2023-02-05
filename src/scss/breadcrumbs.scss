@@ -1,0 +1,31 @@
+.breadcrumbs {
+  margin-bottom: 40px;
+  // .breadcrumbs__list
+  &__list {
+    font-size: 15px;
+    line-height: 1.2;
+    color: $color-link;
+    // .breadcrumbs__list-item
+    &-item {
+      position: relative;
+      display: inline-block;
+      padding-right: 16px;
+      margin-right: 10px;
+      // .breadcrumbs__list-item::before
+      &::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 10px;
+        right: 0;
+        bottom: 0.1rem;
+        background-image: url('../img/link-arrow.svg');
+        background-repeat: no-repeat;
+      }
+      // .breadcrumbs__list-item:last:child::before
+      &:last-child::before {
+        display: none;
+      }
+    }
+  }
+}
