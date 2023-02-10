@@ -1,18 +1,24 @@
+// библиотеки
+@import "ion.rangeSlider.scss";
+@import "jquery.formstyler.scss";
+@import "jquery.formstyler.theme.scss";
+@import "jquery.rateyo.scss";
+@import "slick.scss";
+// тех
 @import "fonts.scss";
 @import "__reset.scss";
 @import "__mixin.scss";
 @import "__var.scss";
-@import "slick.scss";
-
+// секции
 @import "global.scss";
 @import "header.scss";
-
 @import "banner-section.scss";
 @import "search.scss";
 @import "catigories.scss";
 @import "products.scss";
 @import "banner.scss";
-
 @import "breadcrumbs.scss";
+@import "catalog.scss";
+
 
 @import "footer.scss";
