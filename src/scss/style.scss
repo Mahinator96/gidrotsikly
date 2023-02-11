@@ -9,7 +9,7 @@
 @import "__reset.scss";
 @import "__mixin.scss";
 @import "__var.scss";
-// секции
+// секции главной
 @import "global.scss";
 @import "header.scss";
 @import "banner-section.scss";
@@ -17,8 +17,11 @@
 @import "catigories.scss";
 @import "products.scss";
 @import "banner.scss";
+// секции страницы католога
 @import "breadcrumbs.scss";
 @import "catalog.scss";
-
+// секции страницы товара
+@import "product-card.scss";
+@import "card__tabs.scss";
 
 @import "footer.scss";

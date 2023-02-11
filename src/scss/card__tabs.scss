@@ -1,0 +1,227 @@
+.card{
+  // .card__tab
+  &__tab {
+    // .card__tab-content
+    &-content {
+
+    }
+  }
+  // .card__tabs
+  &__tabs {
+    margin-bottom: 100px;
+    // .conteiner
+    & .container {
+      width: 100%;
+    }
+    // .card__tabs .tabs
+    .tabs {
+      display: flex;
+      justify-content: space-around;
+      padding: 23px 0;
+      background-color: $bg-gray;
+      margin-bottom: 50px;
+      // .card__tabs .tabs .tab
+      & .tab {
+        padding-bottom: 5px;
+        position: relative;
+        color: rgba($main_text-color, 0.6);
+        // .card__tabs .tabs .tab:before
+        &:before {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 3px;
+          right: 0;
+          bottom: -3px;
+          background-color:  $color-decor;
+          transition: all 0.5s;
+        }
+        // .card__tabs .tabs .tab:hover
+        &:hover {
+          // .card__tabs .tabs .tab:hover::before
+          &::before {
+            width: 100%;
+            left: 0;
+          }
+        }
+        // .card__tabs .tabs .tab--active
+        &--active{
+          color: $main_text-color;
+          // .card__tabs .tabs .tab--active::before
+          &::before {
+            width: 100%;
+          }
+        }
+        // .card__tabs .tabs .tab .area__link::before
+        & .area__link::before {
+          padding-bottom: 5px;
+          color: $main_text-color;
+          font-weight: 400;
+        }
+      }
+      // .tabs-wrapper
+      &-wrapper {
+  
+        // width: 100%;
+      }
+      // .tabs-container
+      &-container {
+      }
+      // .tabs-content
+      &-content {
+      }
+    }
+  }
+    // .card__list
+  &__list {
+    width: 100%;
+    // .card__list-item
+    & tr {
+      display: flex;            
+      border-bottom: 1px solid rgba(#2F3035, 0.1);
+
+      &.card__list-title {
+        border-bottom: none;
+      }
+      
+      & td,th {
+        flex-basis: 20%;
+      }
+
+      th {
+        display: flex;
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+
+      & td {
+        font-size: 16px;
+        line-height: 1.5;
+        color: rgba(#2F3035, 0.7);
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 20px 0;
+        padding-right: 10px;
+
+        &:last-child {
+          padding-right: 0;
+        }
+        
+        
+        
+        &.card__list-btn {
+          flex-direction: row;
+          justify-content: flex-end;
+
+          & button {
+            @extend %ff_SFProDisplay-Regular;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px 40px;
+            background-color: $color-decor;
+            font-size: 13px;
+            line-height: 1.23;
+            letter-spacing: 0.12em;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+        }
+
+        &:nth-child(2) {
+          
+        }
+
+        // &:nth-child(3),
+        // &:nth-child(4) {
+        //   text-align: center;
+        // }
+      }
+    }
+  }
+}
+
+.tabs {
+  // .tabs-content
+  &-content {
+  }
+}
+.card {
+  // .card__tab
+  &__tab {
+    // .card__tab-content
+    &-content {
+      margin-left: 40px;
+    }
+  }
+  // .card__top
+  &__top {
+    // .card__top-line
+    &-line {
+      display: flex;
+      font-size: 17px;
+      line-height: 1.176;
+      color: rgba($main_text-color, 0.7);
+      margin-bottom: 50px;
+    }
+    // .card__top-input
+    &-input {
+      background-color: $bg-gray;
+      width: 56.4%;
+      padding: 9px 30px 9px 17px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        width: 16px;
+        height: 17px;
+        background-image: url('@img/input-search.svg');
+
+      }
+    }
+  }
+  // .card__label
+  &__label {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+    & label {
+      display: flex;
+      align-items: center;
+    }
+    // .card__label-seaerch
+    &-seaerch {
+      padding-right: 10px;
+
+      span {
+        margin-right: 17px;
+      }
+    }
+    // .card__label-pickup
+    &-pickup {
+      display: flex;
+      column-gap: 54px;
+
+      // & label {
+      //   display: flex;
+      //   align-items: center;
+      // }
+    }
+  }
+  // .card__list
+  &__list {
+    width: 100%;
+    // .card__list-item
+    &-item {
+    }
+  }
+}
+.weekdays {
+}
+.weekend {
+}

@@ -22,10 +22,20 @@
         background-image: url('../img/link-arrow.svg');
         background-repeat: no-repeat;
       }
-      // .breadcrumbs__list-item:last:child::before
       &:last-child::before {
         display: none;
       }
+      // .breadcrumbs__list-item:hover
+      &:hover a {
+        // border-bottom: 1px solid $color-link;
+        // text-decoration: underline;
+        color: $main_text-color;
+      }
+
+      & a {
+        transition: 0.5s;
+      }
+      // .breadcrumbs__list-item:last:child::before
     }
   }
 }

@@ -9,4 +9,7 @@ import './modules/isWebp.js';
 import './modules/banner-slider.js';
 import './modules/search.js';
 import './modules/products.js';
+
 import './modules/catalog.js';
+
+import './modules/product-card.js';
