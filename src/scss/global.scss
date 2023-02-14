@@ -110,4 +110,14 @@ input {
     outline: #000 solid 1px;
   }
 }
+.footer{
+  position: relative;
+  transition: 0.8s;
+  left: 0;
 
+  &.hide {
+    // opacity: 0;
+    left: -150%;
+    transition: 0.1s;
+  }
+}

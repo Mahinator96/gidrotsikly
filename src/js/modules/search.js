@@ -7,6 +7,7 @@ $(function() {
 
     $($(this).siblings()).removeClass('tab--active');
     $($(this).parent().siblings().find('div')).removeClass('tabs-content--active'); 
+    $($(this).parent().parent().siblings().find('div')).removeClass('tabs-content--active'); 
 
     $(this).addClass('tab--active');
     $(id).addClass('tabs-content--active');

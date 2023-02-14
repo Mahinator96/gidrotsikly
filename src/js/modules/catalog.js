@@ -33,4 +33,13 @@ $(function(){
   $(contentCheckBtn).on('click', function (){
     $(this).toggleClass('checked');
   });
+
+  $('.aside-filter__btn').on('click', function (e){
+    e.preventDefault();
+    $('.tabs-wrapper').toggleClass('active');
+    $('.catalog__inner-list').toggleClass('hide');
+    $('.catalog__inner-list').slideToggle(800);
+    $('.footer, .pagination').toggleClass('hide');
+
+  });
 });

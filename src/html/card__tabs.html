@@ -2,38 +2,33 @@
     <div class="container">
 
       <div class="tabs-wrapper">
+        <div class="card__tabs-wrapper">
+          <!-- tabs -->
+          <ul class="tabs">
+            <li class="tab card__tab" data-area="#products-card__tabs-1">
+              <a class="area__link" href="#" aria-label="О товаре"></a>
+            </li>
+            <li class="tab card__tab" data-area="#products-card__tabs-2">
+              <a class="area__link" href="#" aria-label="Характеристики"></a>
+            </li>
+            <li class="tab card__tab" data-area="#products-card__tabs-3">
+              <a class="area__link" href="#" aria-label="Отзывы"></a>
+            </li>
+            <li class="tab card__tab tab--active" data-area="#products-card__tabs-4">
+              <a class="area__link" href="#" aria-label="Самовывоз"></a>
+            </li>
+            <li class="tab card__tab" data-area="#products-card__tabs-5">
+              <a class="area__link" href="#" aria-label="Доставка"></a>
+            </li>
+            <li class="tab card__tab" data-area="#products-card__tabs-6">
+              <a class="area__link" href="#" aria-label="Cервис"></a>
+            </li>
+            <li class="tab card__tab" data-area="#products-card__tabs-7">
+              <a class="area__link" href="#" aria-label="Гарантия"></a>
+            </li>
+          </ul>
+        </div>
         <!-- tabs -->
-        <ul class="tabs">
-          <li class="tab card__tab" data-area="#products-card__tabs-1">
-            <a class="area__link" href="#" aria-label="О товаре"></a>
-          </li>
-
-          <li class="tab card__tab" data-area="#products-card__tabs-2">
-            <a class="area__link" href="#" aria-label="Характеристики"></a>
-          </li>
-
-          <li class="tab card__tab" data-area="#products-card__tabs-3">
-            <a class="area__link" href="#" aria-label="Отзывы"></a>
-          </li>
-
-          <li class="tab card__tab tab--active" data-area="#products-card__tabs-4">
-            <a class="area__link" href="#" aria-label="Самовывоз"></a>
-          </li>
-
-          <li class="tab card__tab" data-area="#products-card__tabs-5">
-            <a class="area__link" href="#" aria-label="Доставка"></a>
-          </li>
-
-          <li class="tab card__tab" data-area="#products-card__tabs-6">
-            <a class="area__link" href="#" aria-label="Cервис"></a>
-          </li>
-
-          <li class="tab card__tab" data-area="#products-card__tabs-7">
-            <a class="area__link" href="#" aria-label="Гарантия"></a>
-          </li>
-        </ul>
-        <!-- tabs -->
-
         <!-- tabs-container -->
         <div class="tabs-container">
           <div class="tabs-content card__tab-content" id="products-card__tabs-1">1</div>
@@ -58,11 +53,7 @@
                   </label>
                 </div>
               </div>
-
-              <!-- <ul class="card__list">
-                <li class="card__list-item"></li>
-              </ul> -->
-
+              <!-- Начало card__list -->
               <table class="card__list">
                 <tr class="card__list-title">
                   <th>Адрес</th>
@@ -125,6 +116,41 @@
                 </tr>
                 
               </table>
+              <!-- Конец card__list -->
+
+              <!-- Начало card__list-mobile -->
+              <div class="card__tabs-wrapper-mobile">
+                <table class="card__list-mobile">
+                  <tbody>
+                    <tr>
+                      <td class="card__list-mobile_title">Адрес</td>
+                      <td>Москва, ул. Науки 25</td>
+                    </tr>
+                    <tr class="card__list-mobile_worktime" >
+                      <td class="card__list-mobile_title">Режим работы
+                        <p>пн-сб:</p>
+                        <p>вс:</p>
+                      </td>
+                      <td>
+                        <div style="opacity: 0;">08:00-19:00</div>
+                        <div class="weekdays">08:00-19:00</div>
+                        <div class="weekend">09:00-17:00</div>
+                      </td>
+                    </tr>
+                
+                    <tr class="card__list-mobile_access">
+                      <td class="card__list-mobile_title">Доступно</td>
+                      <td>В наличии</td>
+                    </tr>
+                    <tr class="card__list-mobile_quantity">
+                      <td class="card__list-mobile_title">Количество</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="card-form__button-mobile" type="button">купить</button>
+              </div>
+              <!-- Конец card__list-mobile -->
             </form>
           </div>
 
@@ -135,6 +161,7 @@
           <div class="tabs-content card__tab-content" id="products-card__tabs-7">7</div>
         </div>
         <!-- tabs-container -->
+
       </div>
       <!-- tabs-wrapper -->
 

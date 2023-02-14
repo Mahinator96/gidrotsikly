@@ -6,6 +6,7 @@ import './modules/jquery.formstyler.min.js';
 import './modules/jquery.rateyo.js';
 // мой js
 import './modules/isWebp.js';
+import './modules/header.js';
 import './modules/banner-slider.js';
 import './modules/search.js';
 import './modules/products.js';

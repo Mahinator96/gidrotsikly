@@ -12,6 +12,10 @@
     line-height: 1.21;
     padding-left: 12px;
 
+    @media (max-width: 640px) {
+      width: 100%;
+    }
+
     &::placeholder {
       color: $color-link;
     }
@@ -39,32 +43,70 @@
     &-inner {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 30px;
+      
+      @media (max-width: 640px) {
+        // justify-content: center;
+      }
     }
     // .footer__top-item
     &-item {
+      min-width: max-content;
     // .footer__top-newsletter
       &--newsletter {
         width: 295px;
+
+        @media (max-width: 640px) {
+          width: 100%;
+          justify-content: center;
+        }
         // .footer__top-newsletter .footer__top-title
         & .footer__top-title {
           margin-bottom: 35px;
+          text-align: center;
+        }
+      }
+      // .footer__top-itemmenu
+      &menu {
+        display: flex;
+
+        @media (max-width: 640px) {
+          width: 100%;
+          justify-content: space-around;
         }
       }
       // .footer__top-item--social
       &--social {
         display: flex;
         width: 210px;
+
+        @media (max-width: 920px) {
+          max-width: 100%;
+          width: 100%;
+          justify-self: center;
+        }
       }
       // .footer__top-item--info
       &--info {
         max-width: 110px;
+        
+        @media (max-width: 640px) {
+          // width: 100%;
+          // max-width: 100%;
+        }
       }
       // .footer__top-item--shop
       &--shop {
         max-width: 200px;
+
+        @media (max-width: 640px) {
+          // width: 100%;
+          // max-width: 100%;
+        }
       }
       & + .footer__top-item {
-        padding-left: 10px;
+        padding-left: 20px;
       }
     }
     // .footer__top-title
@@ -90,6 +132,13 @@
     display: flex;
     justify-content: center;
     column-gap: 80px;
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: center;
+
+    }
     // .footer__bottom-link
     &-link {
       font-size: 10px;
@@ -115,6 +164,11 @@
 }
 .social-list {
   width: 100%;
+  
+  @media (max-width: 920px) {
+    justify-content: center;
+    column-gap: 30px;
+  }
   // .social-list__item
   &__item {
   }
